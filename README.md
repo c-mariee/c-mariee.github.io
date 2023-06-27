@@ -3,4 +3,4 @@
 This is my Portfolio Project. 
 c-mariee.github.io/PortFolioFinal.html
 
-<img src="PortfolioSummary.jpg" width='900' height='300'/>
+<img src="PortfolioSummary.jpg" width='900' height='400'/>
