@@ -1,10 +1,105 @@
 # c-mariee.github.io
 
+<!DOCTYPE html>
 <html>
 <head>
   <title>My Website</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    body {
+      background-color: #2F4F4F;
+      color: #FFFAF0;
+    }
+    nav {
+      background-color: #FFFAF0;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 100px;
+    }
+    nav ul li a {
+      color: #2F4F4F;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-color:#2F4F4F;
+      font-size: 1.5rem;
+      font-family: "Gill Sans";
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Gill Sans";
+      font-weight: bold;
+      color: #FFFAF0;
+      background-color: #FFB6C1;
+    }
+    h2 {
+      text-align: center;
+      font-family: "Gill Sans";
+      font-weight: bold;
+      color: #FFFAF0;
+    }
+    .columns {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex-basis: 30%;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .column h2 {
+      font-family: "Gill Sans";
+      font-weight: bold;
+      color: #2F4F4F;
+      background-color: #FFFAF0;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .column img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-width: 200px;
+      max-height: 150px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .column img:hover {
+      opacity: 0.7;
+    }
     body {
       background-color: #2F4F4F;
       color: #FFE4E1;
@@ -233,32 +328,33 @@
   </style>
 </head>
 <body>
-    <nav>
-        <ul>
-          <li><a href="portfolio.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li> 
-          <li class="dropdown">
-            <a href="javascript:void(0)">Connect</a>
-            <div class="dropdown-content">
-              <a href="CheyenneMiller_Resume.pdf">Resume</a>
-              <a href="https://www.linkedin.com/in/cheyenne-miller-97089174/">LinkedIn</a>
-              <a href="https://github.com/c-mariee">GitHub</a>
-            </div>
-          </li>
-        </ul>
-      </nav>      
+  <nav>
+    <ul>
+      <li><a href="portfolio.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)">Connect</a>
+        <div class="dropdown-content">
+          <a href="CheyenneMiller_Resume.pdf">Resume</a>
+          <a href="https://www.linkedin.com/in/cheyenne-miller-97089174/">LinkedIn</a>
+          <a href="https://github.com/c-mariee">GitHub</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
   <section id="home" class="banner">
     <h1 class="font-weight-bold">Cheyenne Miller</h1>
-    <h2>Este portafolio es la culminación de lo que he aprendido hasta la fecha y expresado de una manera que es únicamente mía.
+    <h2>Este portafolio es la culminación de lo que he aprendido hasta la fecha y expresado de una manera que es únicamente mía.</h2>
     <h3>"Hay una diferencia vital entre practicar para obtener algo que crees que te falta y practicar para expresar la plenitud de quien eres."</h3>
     <a class="button3" href="#">
-        <img class="icon" src="GitHubLogo.jpg" alt="GitHub Logo">
-        View GitHub
-      </a>
+      <img class="icon" src="GitHubLogo.jpg" alt="GitHub Logo">
+      View GitHub
+    </a>
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/nPBVaUP5onM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-  </section>  
+  </section>
 
   <section id="about" class="section">
     <h2>About Me</h2>
@@ -275,8 +371,3 @@
       <div class="column">
         <h4>A little about me</h4>
         <p>My name is Cheyenne and I'm a product compliance manager at a fintech, and I'm taking the opportunity explore the full stack development space. I'm passionate about creating efficient and effective processes, conducting testing and quality assurance, and helping teams solve problems to scale programs. This website marks the beginning of my journey towards full stack development, and I'm excited you've landed on my page.</p>
-      </div>
-    </div>
-  </section>  
-</body>
-</html>
